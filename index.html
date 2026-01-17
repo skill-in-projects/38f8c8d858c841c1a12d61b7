@@ -201,23 +201,7 @@
             </p>
         </div>
     </div>
-    <script>
-        // Load config.js and ensure it's available
-        let configLoaded = false;
-        const configScript = document.createElement('script');
-        configScript.src = 'config.js';
-        configScript.onload = function() {
-            configLoaded = true;
-            console.log('✅ config.js loaded successfully');
-            console.log('📋 CONFIG:', typeof CONFIG !== 'undefined' ? CONFIG : 'CONFIG not defined');
-            console.log('📋 window.CONFIG:', typeof window !== 'undefined' && window.CONFIG ? window.CONFIG : 'window.CONFIG not defined');
-        };
-        configScript.onerror = function() {
-            console.error('❌ Failed to load config.js');
-            configLoaded = false;
-        };
-        document.head.appendChild(configScript);
-    </script>
+    
     <script>
         // Debug: Log config on load
         window.addEventListener('DOMContentLoaded', function() {
