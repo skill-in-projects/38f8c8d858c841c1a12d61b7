@@ -227,7 +227,7 @@
                 
                 // Try multiple ways to access CONFIG (handle scope issues)
                 let config = typeof CONFIG !== 'undefined' ? CONFIG : (typeof window !== 'undefined' && window.CONFIG ? window.CONFIG : null);
-                let apiUrl = config?.API_URL || '';
+                
                 
                 console.log('🔍 CONFIG object:', config);
                 console.log('🔍 Original API_URL from config:', apiUrl);
